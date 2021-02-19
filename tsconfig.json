@@ -1,0 +1,20 @@
+{
+  "extends": "@bconnorwhite/bob",
+  "compilerOptions": {
+    "rootDirs": [
+      "source",
+      "types"
+    ],
+    "typeRoots": [
+      "node_modules/@types",
+      "types"
+    ],
+    "types": [
+      "@webgpu/types"
+    ]
+  },
+  "include": [
+    "source",
+    "types"
+  ]
+}

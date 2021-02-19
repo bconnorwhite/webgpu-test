@@ -1,0 +1,39 @@
+{
+  "name": "webgpu-test",
+  "version": "0.0.1",
+  "main": "./build/index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "bob build",
+    "start": "node ./build/server/index.js",
+    "watch": "bob watch"
+  },
+  "dependencies": {
+    "fastify": "^3.12.0",
+    "fastify-static": "^4.0.0",
+    "gl-matrix": "^3.3.0",
+    "middie": "^5.2.0",
+    "webpack": "^5.23.0",
+    "webpack-dev-middleware": "^4.1.0",
+    "webpack-hot-middleware": "^2.25.0"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.12.17",
+    "@bconnorwhite/bob": "^2.9.2",
+    "@types/webpack-dev-middleware": "^4.1.0",
+    "@types/webpack-hot-middleware": "^2.25.3",
+    "@webgpu/types": "^0.0.38",
+    "babel-loader": "^8.2.2"
+  },
+  "eslintConfig": {
+    "extends": "eslint-config-bob"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "bob lint commit"
+    }
+  },
+  "npmpackagejsonlint": {
+    "extends": "npm-package-json-lint-config-bob"
+  }
+}
